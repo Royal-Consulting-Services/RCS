@@ -1,0 +1,99 @@
+@import './variable.scss';
+body {
+    font-family: 'Fonts-Regular';
+    background-color: red;
+    background-image: url(../images/body-bg.jpg);
+    h1,h2,h3,h4,h5,h6{
+        font-family: "Fonts-Bold";
+    }
+}
+.header-container {
+    background-color: $themeWhite;
+.top-header {
+    .list-group.list-group-horizontal {
+        .list-group-item {
+            border: none;
+        }
+    }
+}
+
+.main-navbar {
+    .complogo {
+        height: 80px;
+    }
+}
+}
+
+.content-section {
+    padding: 50px 0px;
+    .content-header{
+        font-family: "Fonts-Bold";
+    }
+}
+.about-section {
+
+    margin: 50px 0px;
+    padding: 50px;
+    background: #ffffff;
+    border-radius: 20px;
+    margin-top: -100px;
+    position: relative;
+    p{
+        text-align: justify;
+    }
+}
+
+.mainfooter {
+    background-image: url(../images/footer-bg.jpg);
+
+    .f-overlay {
+        background: #000000a1;
+        padding: 50px 0px;
+    }
+.footer-continer{
+   .hr-light{
+    border-color:$themeWhite;
+    opacity: 1;
+   }
+   color: $themeWhite;
+   .footer-para{
+    text-align: justify;
+    -webkit-line-clamp: 6;
+    -webkit-box-orient: vertical;
+    display: -webkit-box;
+    overflow: hidden;
+   }
+   .footer-links{
+    .list-group-item{
+        background: transparent;
+        color: #ffffff;
+    }
+   }
+   .footer-address{
+    .contact-icon{
+        font-size: 20px;
+        padding: 0px 10px;
+    }
+   }
+   .footer-mobile{
+    .contact-icon{
+        font-size: 20px;
+        padding: 0px 10px;
+    }
+   }
+}
+    .footer-logo {
+        .complogo {
+            height: 80px;
+        }
+    }
+    .sub-footer{
+        background: $themeBlack;
+        color: $themeWhite;
+        text-align: center;
+        p{
+            margin: 0px;
+            padding:10px 0px;
+        }
+    }
+}
