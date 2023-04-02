@@ -1,48 +1,203 @@
 @import './variable.scss';
+
 body {
     font-family: 'Fonts-Regular';
     background-color: red;
     background-image: url(../images/body-bg.jpg);
-    h1,h2,h3,h4,h5,h6{
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
         font-family: "Fonts-Bold";
     }
 }
+
 .header-container {
     background-color: $themeWhite;
-.top-header {
-    .list-group.list-group-horizontal {
-        .list-group-item {
-            border: none;
+
+    .top-header {
+        .list-group.list-group-horizontal {
+            .list-group-item {
+                border: none;
+            }
+        }
+    }
+
+    .main-navbar {
+        .complogo {
+            height: 80px;
+        }
+
+        .navbar-dropdown-custom {
+            .navbar-dropdownsub-custom{
+            .nav-link{
+                text-align: center;
+                padding: 4px 16px;
+            }
+        }
+            .dropdown-menu {
+                width: 600px;
+                .dropdown-item.navitem-title,.dropdown-item.navitem-title:hover {
+                    // text-align: center;
+                    color:#000;
+                    font-size: 20px;
+                    font-weight: 600;
+                    border-bottom: solid 2px #ead40968;
+                    margin: 0px 15px;
+                    width: calc(100% - 30px);
+                }
+                .dropdown-item:hover {
+                    color: #ead409;
+                    background: transparent;
+                    // text-align: center;
+                }
+            }
         }
     }
 }
 
-.main-navbar {
-    .complogo {
-        height: 80px;
+.content-container {
+    padding: 0px;
+
+    .card-overlay {
+        background-color: #2722224a;
+        position: absolute;
+        z-index: 100;
+        top: 0;
+        right: 0;
+        height: 100%;
+        z-index: 100;
+        border: 0px;
+        width: 100%;
     }
-}
+
+    .card-content {
+        position: absolute;
+        background: #ffffff75;
+        width: 78%;
+        top: 50%;
+        left: 50%;
+        height: 110px;
+        -webkit-transform: translate(-50%, -50%);
+        -moz-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        -o-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+        text-align: center;
+        color: #000;
+        z-index: 1000;
+        padding: 10px;
+
+        svg {
+            border-radius: 50%;
+            background: #ead409;
+            padding: 8px 10px;
+            color: #ffffff;
+            height: 35px;
+            padding: 10px;
+            width: 35px;
+        }
+    }
+
+    // .card-overlay:hover{
+    //     background-color: transparent;
+    //     position: absolute;
+    //     z-index: 100;
+    //     top: 0;
+    //     right: 0;
+    //     height: 100%;
+    //     z-index: 100;
+    //     border: 0px;
+    //     width: 100%;
+    // }
 }
 
 .content-section {
     padding: 50px 0px;
-    .content-header{
+
+    .content-header {
         font-family: "Fonts-Bold";
     }
-}
-.about-section {
 
-    margin: 50px 0px;
-    padding: 50px;
-    background: #ffffff;
-    border-radius: 20px;
-    margin-top: -100px;
-    position: relative;
-    p{
+    p {
         text-align: justify;
     }
 }
 
+.about-section {
+    margin: 50px 0px;
+    padding: 50px;
+    background: #ffffff;
+    border-radius: 20px;
+    // margin-top: -100px;
+    position: relative;
+
+    p {
+        text-align: justify;
+    }
+}
+
+.page-container {
+    background: #ffffff;
+}
+
+.page-breadcrumb {
+    padding: 10px 0px;
+
+    .breadcrumb {
+        margin: 0px;
+    }
+}
+
+.service-card{
+    box-shadow: 2px 3px 5px 0 #d0d2d5;
+    border-radius: 24px;
+    transition: transform 1s;
+    img{
+        padding: 20px;
+        border-radius: 50px;
+    }
+}
+.service-card:hover{
+background-color: #fff;
+outline: 1px solid #fff;
+border-radius: 24px;
+box-shadow: 0 0 2px 2px #d0d2d5;
+transform: scale(1.1);
+}
+.portfolio-card {
+    overflow: hidden;
+    border-radius: 0px;
+    img{
+        border-radius: 0px;
+    }
+    .card-body {
+        position: absolute;
+        width: 0;
+        left:0;
+        opacity: 0;
+        transition: .5s ease;
+    }
+}
+.portfolio-card:hover{
+    .card-body {
+
+        opacity: 1;
+        background: #1200005c;
+        width: 100%;
+        height: 100%;
+        transition: .5s ease;
+        .body-cont{
+            color:#fff;
+            padding:20px;
+            border:solid 1px yellow;
+            border-style: dashed;
+        }
+    }
+}
 .mainfooter {
     background-image: url(../images/footer-bg.jpg);
 
@@ -50,50 +205,60 @@ body {
         background: #000000a1;
         padding: 50px 0px;
     }
-.footer-continer{
-   .hr-light{
-    border-color:$themeWhite;
-    opacity: 1;
-   }
-   color: $themeWhite;
-   .footer-para{
-    text-align: justify;
-    -webkit-line-clamp: 6;
-    -webkit-box-orient: vertical;
-    display: -webkit-box;
-    overflow: hidden;
-   }
-   .footer-links{
-    .list-group-item{
-        background: transparent;
-        color: #ffffff;
+
+    .footer-continer {
+        .hr-light {
+            border-color: $themeWhite;
+            opacity: 1;
+        }
+
+        color: $themeWhite;
+
+        .footer-para {
+            text-align: justify;
+            -webkit-line-clamp: 6;
+            -webkit-box-orient: vertical;
+            display: -webkit-box;
+            overflow: hidden;
+        }
+
+        .footer-links {
+            .list-group-item {
+                background: transparent;
+                color: #ffffff;
+            }
+        }
+
+        .footer-address {
+            .contact-icon {
+                font-size: 20px;
+                padding: 0px 10px;
+            }
+        }
+
+        .footer-mobile {
+            .contact-icon {
+                font-size: 20px;
+                padding: 0px 10px;
+            }
+        }
     }
-   }
-   .footer-address{
-    .contact-icon{
-        font-size: 20px;
-        padding: 0px 10px;
-    }
-   }
-   .footer-mobile{
-    .contact-icon{
-        font-size: 20px;
-        padding: 0px 10px;
-    }
-   }
-}
+
     .footer-logo {
         .complogo {
             height: 80px;
+            background: #fff;
         }
     }
-    .sub-footer{
+
+    .sub-footer {
         background: $themeBlack;
         color: $themeWhite;
         text-align: center;
-        p{
+
+        p {
             margin: 0px;
-            padding:10px 0px;
+            padding: 10px 0px;
         }
     }
 }

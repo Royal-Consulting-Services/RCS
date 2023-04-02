@@ -9,7 +9,9 @@ import { Routes, Route, BrowserRouter } from 'react-router-dom';
 import Services from './components/Services';
 import Contact from './components/Contact';
 import Aboutus from './components/Aboutus';
-function App() {
+import Portfolio from './components/Portfolio';
+import { bedRoomArr, kidsRoomArr, studyRoomArr, ukitchenRoomArr } from './images/images';
+function App() { 
   return (
     <div className="App">
       <BrowserRouter>
@@ -19,7 +21,12 @@ function App() {
           <Route path='/home' element={<Home />} />
           <Route index element={<Home />} />
           <Route path='/aboutus' element={<Aboutus />} />
-          <Route path='/services' element={<Services />} />
+          <Route path='/services/kidsroom' element={<Services content={kidsRoomArr}/>} />
+          <Route path='/services/bedroom' element={<Services content={bedRoomArr}/>} />
+          <Route path='/services/studyroom' element={<Services content={studyRoomArr}/>} />
+          <Route path='/services/ukitchenroom' element={<Services content={ukitchenRoomArr}/>} />
+          
+          <Route path='/portfolio' element={<Portfolio />} />
           <Route path='/contact' element={<Contact />} />
         </Routes>
         <Footer />
