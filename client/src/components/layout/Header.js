@@ -8,14 +8,14 @@ import { Clogo } from '../../images/images';
 const Header = () => {
   return (
     <Container fluid className='header-container'>
-      <div className='top-header d-flex'>
+      {/* <div className='top-header d-flex'>
         <ListGroup horizontal className='ms-auto'>
           <ListGroup.Item>This</ListGroup.Item>
           <ListGroup.Item>ListGroup</ListGroup.Item>
           <ListGroup.Item>renders</ListGroup.Item>
           <ListGroup.Item>horizontally!</ListGroup.Item>
         </ListGroup>
-      </div>
+      </div> */}
       <Navbar className='main-navbar' bg="light" expand="lg" >
         <Navbar.Brand href="#home">
           <img

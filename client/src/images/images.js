@@ -5,6 +5,7 @@ export const Clogo = require('./companylogo.png');
 export const Aboutusport = require('./aboutus-port.jpg');
 export const AboutusBnr = require('./pagebanner/aboutus.jpg');
 export const PorfolioBnr = require('./pagebanner/portfolio.jpg');
+export const ContactBnr = require('./pagebanner/contactus.jpg');
 export const dyningRoom = require('./slider/dyningroom.jpg');
 export const livingRoom = require('./slider/livingroom.jpg');
 export const poojaRoom = require('./slider/poojaroom.jpg');
@@ -63,6 +64,8 @@ export const ukitchenRoomArr = [{
     src: ukitchenRoomservice2
 },
 ]
+
+
 
 
 
