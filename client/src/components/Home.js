@@ -1,9 +1,9 @@
 
-import { faBed, faBell, faDoorOpen, faGopuram, faUtensils } from '@fortawesome/free-solid-svg-icons';
+import { faBed, faBell, faDoorOpen, faGopuram, faQuoteLeft, faQuoteRight, faUtensils } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import React from 'react';
 import { Button, Card, Carousel, Col, Container, Row } from 'react-bootstrap';
-import { Aboutus, Aboutusport, Slide1, Slide2, Slide3, dyningRoom, livingRoom, poojaRoom, bedRoom } from '../images/images';
+import { customerVoice1, Aboutusport, Slide1, Slide2, Slide3, dyningRoom, livingRoom, poojaRoom, bedRoom } from '../images/images';
 
 const Home = () => {
   return (
@@ -51,7 +51,7 @@ const Home = () => {
             <Card >
               <div className='card-overlay'></div>
               <div className='card-content'>
-              <FontAwesomeIcon icon= {faUtensils} />
+                <FontAwesomeIcon icon={faUtensils} />
                 <h3>Dyning Room</h3>
               </div>
               <Card.Img variant="top" src={dyningRoom} />
@@ -61,7 +61,7 @@ const Home = () => {
             <Card >
               <div className='card-overlay'></div>
               <div className='card-content'>
-              <FontAwesomeIcon icon= {faDoorOpen} />
+                <FontAwesomeIcon icon={faDoorOpen} />
                 <h3>Living Room</h3>
               </div>
               <Card.Img variant="top" src={livingRoom} />
@@ -71,7 +71,7 @@ const Home = () => {
             <Card >
               <div className='card-overlay'></div>
               <div className='card-content'>
-              <FontAwesomeIcon icon= {faBell} />
+                <FontAwesomeIcon icon={faBell} />
                 <h3>Pooja Room</h3>
               </div>
               <Card.Img variant="top" src={poojaRoom} />
@@ -81,7 +81,7 @@ const Home = () => {
             <Card >
               <div className='card-overlay'></div>
               <div className='card-content'>
-              <FontAwesomeIcon icon= {faBed} />
+                <FontAwesomeIcon icon={faBed} />
                 <h3>Bed Room</h3>
               </div>
               <Card.Img variant="top" src={bedRoom} />
@@ -119,7 +119,7 @@ const Home = () => {
                   <Card.Text>
                     Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy
                   </Card.Text>
-                  <Button variant="primary">Go somewhere</Button>
+                  <Button variant="link">Show More</Button>
                 </Card.Body>
               </Card>
             </Col>
@@ -131,7 +131,7 @@ const Home = () => {
                   <Card.Text>
                     Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy
                   </Card.Text>
-                  <Button variant="primary">Go somewhere</Button>
+                  <Button variant="link">Show More</Button>
                 </Card.Body>
               </Card>
             </Col>
@@ -143,72 +143,79 @@ const Home = () => {
                   <Card.Text>
                     Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy
                   </Card.Text>
-                  <Button variant="primary">Go somewhere</Button>
+                  <Button variant="link">Show More</Button>
                 </Card.Body>
               </Card>
             </Col>
           </Row>
         </section>
-        <section className='content-section test-section'>
-          <h3 className='content-header'>Customer voice</h3>
-          <Carousel>
-            <Carousel.Item interval={1000}>
-              <Row>
-                <Col xs={12} md={4}>
-                  <div>
-                    <img
-                      className="d-block w-100"
-                      src={Aboutusport}
-                      alt="Third slide"
-                    />
-                  </div>
-                </Col>
-                <Col xs={12} md={8}>
-                  <h3 className='content-header'>About Us</h3>
-                  <p className='justify-content'>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
-                  <p className=''>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
-                </Col>
-              </Row>
-            </Carousel.Item>
-            <Carousel.Item interval={500}>
-              <Row>
-                <Col xs={12} md={4}>
-                  <div>
-                    <img
-                      className="d-block w-100"
-                      src={Aboutusport}
-                      alt="Third slide"
-                    />
-                  </div>
-                </Col>
-                <Col xs={12} md={8}>
-                  <h3 className='content-header'>About Us</h3>
-                  <p className='justify-content'>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
-                  <p className=''>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
-                </Col>
-              </Row>
-            </Carousel.Item>
-            <Carousel.Item>
-              <Row>
-                <Col xs={12} md={4}>
-                  <div>
-                    <img
-                      className="d-block w-100"
-                      src={Aboutusport}
-                      alt="Third slide"
-                    />
-                  </div>
-                </Col>
-                <Col xs={12} md={8}>
-                  <h3 className='content-header'>About Us</h3>
-                  <p className='justify-content'>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
-                  <p className=''>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
-                </Col>
-              </Row>
-            </Carousel.Item>
-          </Carousel>
-        </section>
       </Container>
+      <section className='content-section testi-section'>
+        <h3 className='content-header'>Customer voice</h3>
+        <Carousel>
+          <Carousel.Item interval={1000}>
+            <Row>
+              <Col xs={12} md={4}>
+                <div>
+                  <img
+                    className="d-block w-100"
+                    src={customerVoice1}
+                    alt="Third slide"
+                  />
+                </div>
+              </Col>
+              <Col xs={12} md={8}>
+                <p className='justify-content'>
+                  <FontAwesomeIcon className='quote' icon={faQuoteLeft} />
+                  Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.<FontAwesomeIcon className='quote' icon={faQuoteRight} /> </p>
+                <h4>Mr.Arun</h4>
+                <p>Madurai</p>
+              </Col>
+            </Row>
+          </Carousel.Item>
+          <Carousel.Item interval={500}>
+            <Row>
+              <Col xs={12} md={4}>
+                <div>
+                  <img
+                    className="d-block w-100"
+                    src={customerVoice1}
+                    alt="Third slide"
+                  />
+                </div>
+              </Col>
+              <Col xs={12} md={8}>
+                <p className='justify-content'>
+                  <FontAwesomeIcon className='quote' icon={faQuoteLeft} />
+                  Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.<FontAwesomeIcon className='quote' icon={faQuoteRight} /> </p>
+                  <h4>Mr.Arun</h4>
+                  <p>Madurai</p>
+              </Col>
+            </Row>
+          </Carousel.Item>
+          <Carousel.Item>
+            <Row>
+              <Col xs={12} md={4}>
+                <div>
+                  <img
+                    className="d-block w-100"
+                    src={customerVoice1}
+                    alt="Third slide"
+                  />
+                </div>
+              </Col>
+              <Col xs={12} md={8}>
+                <p className='justify-content'>
+                  <FontAwesomeIcon className='quote' icon={faQuoteLeft} />
+                  Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.<FontAwesomeIcon className='quote' icon={faQuoteRight} /> </p>
+                <h4>Mr.Arun</h4>
+                <p>Madurai</p>
+              </Col>
+            </Row>
+          </Carousel.Item>
+        </Carousel>
+      </section>
+
     </>
   );
 }

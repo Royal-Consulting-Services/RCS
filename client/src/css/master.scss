@@ -2,7 +2,6 @@
 
 body {
     font-family: 'Fonts-Regular';
-    background-color: red;
     background-image: url(../images/body-bg.jpg);
 
     h1,
@@ -32,23 +31,27 @@ body {
         }
 
         .navbar-dropdown-custom {
-            .navbar-dropdownsub-custom{
-            .nav-link{
-                text-align: center;
-                padding: 4px 16px;
+            .navbar-dropdownsub-custom {
+                .nav-link {
+                    text-align: center;
+                    padding: 4px 16px;
+                }
             }
-        }
+
             .dropdown-menu {
                 width: 600px;
-                .dropdown-item.navitem-title,.dropdown-item.navitem-title:hover {
+
+                .dropdown-item.navitem-title,
+                .dropdown-item.navitem-title:hover {
                     // text-align: center;
-                    color:#000;
+                    color: #000;
                     font-size: 20px;
                     font-weight: 600;
                     border-bottom: solid 2px #ead40968;
                     margin: 0px 15px;
                     width: calc(100% - 30px);
                 }
+
                 .dropdown-item:hover {
                     color: #ead409;
                     background: transparent;
@@ -125,6 +128,35 @@ body {
     p {
         text-align: justify;
     }
+    .portfolio-grid{
+        display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    img{
+        width: 25%;
+    }
+    }
+}
+
+.testi-section {
+    padding: 50px 120px;
+    background-image: url(../images/slider/testmonial-bg.png);
+
+    img {
+        border-radius: 50%;
+        height: 300px;
+        width: auto !important;
+        margin: auto;
+    }
+
+    .justify-content {
+        font-size: 24px;
+
+        .quote {
+            font-size: 35px;
+            padding: 0px 20px;
+        }
+    }
 }
 
 .about-section {
@@ -152,37 +184,44 @@ body {
     }
 }
 
-.service-card{
+.service-card {
+    cursor: pointer;
     box-shadow: 2px 3px 5px 0 #d0d2d5;
     border-radius: 24px;
     transition: transform 1s;
-    img{
+    transform: scale(0.9);
+    img {
         padding: 20px;
         border-radius: 50px;
     }
 }
-.service-card:hover{
-background-color: #fff;
-outline: 1px solid #fff;
-border-radius: 24px;
-box-shadow: 0 0 2px 2px #d0d2d5;
-transform: scale(1.1);
+
+.service-card:hover {
+    background-color: #fff;
+    outline: 1px solid #fff;
+    border-radius: 24px;
+    box-shadow: 0 0 2px 2px #d0d2d5;
+    transform: scale(1.0);
 }
+
 .portfolio-card {
     overflow: hidden;
     border-radius: 0px;
-    img{
+
+    img {
         border-radius: 0px;
     }
+
     .card-body {
         position: absolute;
         width: 0;
-        left:0;
+        left: 0;
         opacity: 0;
         transition: .5s ease;
     }
 }
-.portfolio-card:hover{
+
+.portfolio-card:hover {
     .card-body {
 
         opacity: 1;
@@ -190,14 +229,16 @@ transform: scale(1.1);
         width: 100%;
         height: 100%;
         transition: .5s ease;
-        .body-cont{
-            color:#fff;
-            padding:20px;
-            border:solid 1px yellow;
+
+        .body-cont {
+            color: #fff;
+            padding: 20px;
+            border: solid 1px yellow;
             border-style: dashed;
         }
     }
 }
+
 .mainfooter {
     background-image: url(../images/footer-bg.jpg);
 
@@ -207,6 +248,9 @@ transform: scale(1.1);
     }
 
     .footer-continer {
+        h5{
+            color:#ead409;
+        }
         .hr-light {
             border-color: $themeWhite;
             opacity: 1;
@@ -226,7 +270,19 @@ transform: scale(1.1);
             .list-group-item {
                 background: transparent;
                 color: #ffffff;
+                a{
+                color: #ffffffa0;
+                text-decoration: none;
+                }
+                a:hover{
+                    color: #ffffff;
+                    }
             }
+        }
+        .footer-links.product-link{
+            flex-direction: row;
+            padding-left: 0;
+            flex-wrap: wrap;
         }
 
         .footer-address {

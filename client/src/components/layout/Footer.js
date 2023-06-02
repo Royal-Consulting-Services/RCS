@@ -97,28 +97,73 @@ const Footer = () => {
           </Row>
           <hr className='hr-light' />
           <Row>
-            <Col xs={12} md={3}>
-              <h5>Selection & Installation</h5>
-              <p className='footer-para'>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
-              <Button variant="primary">Show More</Button>
-            </Col>
-            <Col xs={12} md={3}>
-              <h5>Quick Links</h5>
-              <ListGroup className='footer-links'>
-                <ListGroup.Item>Home</ListGroup.Item>
-                <ListGroup.Item>About Us</ListGroup.Item>
-                <ListGroup.Item>Services risus</ListGroup.Item>
-                <ListGroup.Item>Contact</ListGroup.Item>
-              </ListGroup>
-            </Col>
-            <Col xs={12} md={3}>
-              <h5>Services</h5>
-              <ListGroup className='footer-links'>
-                <ListGroup.Item>Bed Room</ListGroup.Item>
-                <ListGroup.Item>Kitchen</ListGroup.Item>
-                <ListGroup.Item>Tv Unit</ListGroup.Item>
-                <ListGroup.Item>Pooja Room</ListGroup.Item>
-              </ListGroup>
+            <Col xs={12} md={9}>
+              <Row>
+                <Col xs={12} md={8}>
+                  <h5>Selection & Installation</h5>
+                  <p className='footer-para'>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                </Col>
+                <Col xs={12} md={4}>
+                  <h5>Quick Links</h5>
+                  <ListGroup className='footer-links'>
+                    <ListGroup.Item><a href="#">Home</a></ListGroup.Item>
+                    <ListGroup.Item> <a href="#">About Us</a></ListGroup.Item>
+                    <ListGroup.Item><a href="#">Study Room</a></ListGroup.Item>
+                    <ListGroup.Item><a href="#">Services</a></ListGroup.Item>
+                    <ListGroup.Item><a href="#">Contact</a></ListGroup.Item>
+                  </ListGroup>
+                </Col>
+              </Row>
+              <Row>
+                <Col xs={12} md={12}>
+                  <Row>
+                    <Col xs={12} md={12}>
+                      <h5>Services</h5>
+                      <ListGroup className='footer-links product-link'>
+                        <ListGroup.Item> <a href="#">Master Bedroom</a></ListGroup.Item>
+                        <ListGroup.Item><a href="#">Living Room</a></ListGroup.Item>
+                        <ListGroup.Item><a href="#">Guest Bedroom</a></ListGroup.Item>
+                        <ListGroup.Item> <a href="#">Kids Room</a></ListGroup.Item>
+                        <ListGroup.Item><a href="#">Study Room</a></ListGroup.Item>
+                        <ListGroup.Item><a href="#">Parents Room</a></ListGroup.Item>
+                        <ListGroup.Item><a href="#">Bedroom</a></ListGroup.Item>
+                        <ListGroup.Item> <a href="#">U Shaped</a></ListGroup.Item>
+                        <ListGroup.Item><a href="#">L Shaped</a></ListGroup.Item>
+                        <ListGroup.Item><a href="#">Parallel Kitchen</a></ListGroup.Item>
+                        <ListGroup.Item> <a href="#">Island Kitchen</a></ListGroup.Item>
+                        <ListGroup.Item><a href="#">Straight Kitchen</a></ListGroup.Item>
+                        <ListGroup.Item> <a href="#">Living Room</a></ListGroup.Item>
+                        <ListGroup.Item><a href="#">Dining Room</a></ListGroup.Item>
+                        <ListGroup.Item><a href="#">Foyer Area</a></ListGroup.Item>
+                        <ListGroup.Item> <a href="#">Sliding Door</a></ListGroup.Item>
+                        <ListGroup.Item><a href="#">Swing Door</a></ListGroup.Item>
+                        <ListGroup.Item><a href="#">Walk In Wardrobe</a></ListGroup.Item>
+                      </ListGroup>
+                    </Col>
+                    {/* <Col xs={12} md={4}>
+                      <h5>Kitchen</h5>
+                      <ListGroup className='footer-links'>
+                        <ListGroup.Item> <a href="#">U Shaped</a></ListGroup.Item>
+                        <ListGroup.Item><a href="#">L Shaped</a></ListGroup.Item>
+                        <ListGroup.Item><a href="#">Parallel Kitchen</a></ListGroup.Item>
+                        <ListGroup.Item> <a href="#">Island Kitchen</a></ListGroup.Item>
+                        <ListGroup.Item><a href="#">Straight Kitchen</a></ListGroup.Item>
+                      </ListGroup>
+                    </Col>
+                    <Col xs={12} md={4}>
+                      <h5>Living</h5>
+                      <ListGroup className='footer-links'>
+                        <ListGroup.Item> <a href="#">Living Room</a></ListGroup.Item>
+                        <ListGroup.Item><a href="#">Dining Room</a></ListGroup.Item>
+                        <ListGroup.Item><a href="#">Foyer Area</a></ListGroup.Item>
+                        <ListGroup.Item> <a href="#">Sliding Door</a></ListGroup.Item>
+                        <ListGroup.Item><a href="#">Swing Door</a></ListGroup.Item>
+                        <ListGroup.Item><a href="#">Walk In Wardrobe</a></ListGroup.Item>
+                      </ListGroup>
+                    </Col> */}
+                  </Row>
+                </Col>
+              </Row>
             </Col>
             <Col xs={12} md={3}>
               <h5>Get in touch</h5>
@@ -128,9 +173,9 @@ const Footer = () => {
                   className='contact-icon'
                 />
                 <address>
-                  #6213,<br/>
-                  Road No.4,<br/>
-                  BHEL Metro Enclave,<br/>
+                  #6213,<br />
+                  Road No.4,<br />
+                  BHEL Metro Enclave,<br />
                   Petelguda.
                 </address>
               </div>
@@ -160,8 +205,8 @@ const Footer = () => {
         </Container>
       </div>
       <div className='sub-footer'>
-          <p>&copy; Copyright {year} royalinteriors.am</p>
-        </div>
+        <p>&copy; Copyright {year} royalinteriors.am</p>
+      </div>
     </div>
   );
 }
