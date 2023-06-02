@@ -31,8 +31,8 @@ function App() {
           <Route path='/services/bedroom' element={<Services content={bedRoomArr} serviceClick={selctedService}/>} />
           <Route path='/services/studyroom' element={<Services content={studyRoomArr} serviceClick={selctedService}/>} />
           <Route path='/services/ukitchenroom' element={<Services content={ukitchenRoomArr} serviceClick={selctedService}/>} />
-          <Route path='/servicedetail' element={<ServicesDetail serviceSelected={serviceSelected}/>} />
-          <Route path='/portfolio' element={<Portfolio />} />
+          {/* <Route path='/servicedetail' element={<ServicesDetail serviceSelected={serviceSelected}/>} />
+          <Route path='/portfolio' element={<Portfolio />} /> */}
           <Route path='/contact' element={<Contact />} />
         </Routes>
         <Footer />

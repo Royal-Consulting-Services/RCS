@@ -9,20 +9,23 @@ import Portfolio from './Portfolio';
 
 const ServicesDetail = (props) => {
   const navigate = useNavigate();
-  
+  const {serviceSelected} = props;
 
   const pageLink = [{
     title: "Home",
   },
   {
-    title: "Services",
+    title: "Services"
+  },
+  {
+    title: serviceSelected.title,
     active: true
   }]
   const seviceSelect = () => {
     navigate('/servicedetail')
   }
 
-const {serviceSelected} = props;
+
   return (
     <>
       <Container>
